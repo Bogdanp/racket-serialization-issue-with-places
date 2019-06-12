@@ -9,5 +9,5 @@
   (place ch
     (let loop ()
       (define s (place-channel-get ch))
-      (place-channel-put (string-upcase s))
+      (place-channel-put ch (string-upcase s))
       (loop))))
